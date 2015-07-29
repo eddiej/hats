@@ -1,0 +1,433 @@
+/*------------------------------------*\
+    #RESET
+\*------------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+html, body {
+  font-family: 'Helvetica Neue', helvetica, sans-serif;
+  color:#665E60;
+}
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#intro{
+  flex: 1;
+  width:720px;
+  margin:20px auto 0;
+}
+
+h1 {
+  font-weight:500;
+  font-size:3em;
+  color: #25171A;
+  margin-bottom:20px;
+  letter-spacing: 0.4px;
+  transform: rotate(-2.5deg);
+  transform-origin: bottom left;
+  margin-top:10px;
+  margin:10px 0 15px -30px;
+}
+p{
+  font-weight:300;
+  color: #25171A;
+  margin-bottom:20px;
+  font-size:1.1em;
+  line-height:1.3em;
+  /*font-family:arial;*/
+  letter-spacing: 0.4px;
+}
+
+
+#hats {
+  height:420px;
+  width:720px;
+  margin:0 auto;
+  background: url('../images/head.jpg') bottom left no-repeat;
+  position: relative;
+  padding-top:60px;
+  overflow:hidden;
+}
+
+#hats li .title {
+  transition: all 0.35s ease-in-out;
+  display:block;
+  font-size:0px;
+  position:absolute;
+  margin:0 auto;
+  width:50px;
+}
+#hats li .hat {
+  transition: all 0.25s ease-in-out;
+  width:30px;height:30px;
+  display:inline-block;
+  position:absolute;
+  background-repeat: no-repeat !important;
+}
+#hats li:hover .title {
+  font-size:16px;
+  margin-top:-130px;
+  width:300px;
+}
+#hats li:hover .hat {
+  /*border-color:purple;*/
+  transform: rotate(45deg);
+  transform-origin: center center;
+}
+#hats li:hover .hat.l{
+  /*transform: rotate(-45deg);*/
+}
+
+#hats li {
+  position: relative;
+}
+
+
+#hats li#n5 {
+  top:85px;
+  left:205px;
+}
+#hats li#n5 .hat {
+  width:82px;height:70px;
+  background:url('../images/darkfelt.png');
+}
+#hats li#n5:hover .hat {
+  transform: rotate(-25deg);
+  transform-origin: center center;
+}
+#hats li#n5:hover .title {
+  margin-top:-130px;
+}
+
+
+#hats li#n2 {
+  top:75px;
+  left:285px;
+}
+#hats li#n2 .hat {
+  width:80px;height:69px;
+  background:url('../images/lightfelt.png');
+}
+#hats li#n2:hover .hat {
+  transform: rotate(55deg);
+  transform-origin: center right;
+}
+#hats li#n2:hover .title {
+  margin-top:-130px;
+}
+
+
+#hats li#n3 {
+  top:80px;
+  left:140px;
+}
+#hats li#n3 .hat {
+  width:80px;height:69px;
+  background:url('../images/wine.png');
+}
+#hats li#n3:hover .hat {
+  transform: rotate(-25deg);
+  transform-origin: bottom left;
+}
+#hats li#n3:hover .title {
+  margin-top:-130px;
+}
+
+
+
+#hats li#n4 {
+  top:10px;
+  left:303px;
+}
+#hats li#n4 .hat {
+  width:80px;height:69px;
+  background:url('../images/creamdots.png');
+}
+#hats li#n4:hover .hat {
+  transform: rotate(35deg);
+  transform-origin: center right;
+}
+#hats li#n4:hover .title {
+  margin-top:-70px;
+}
+
+
+#hats li#n1 {
+  top:30px;
+  left:215px;
+}
+#hats li#n1 .hat {
+  width:80px;height:69px;
+  background:url('../images/red.png');
+}
+#hats li#n1:hover .hat {
+  transform: rotate(-35deg);
+  transform-origin: center left;
+}
+#hats li#n1:hover .title {
+  margin-top:-70px;
+}
+
+
+#hats li#n6 {
+  top:20px;
+  left:390px;
+}
+#hats li#n6 .hat {
+  width:81px;height:74px;
+  background:url('../images/creamgrey.png');
+}
+#hats li#n6:hover .hat {
+  transform: rotate(-35deg);
+  transform-origin: center left;
+}
+#hats li#n6:hover .title {
+  margin-top:-70px;
+}
+
+
+#hats li#n7 {
+  top:115px;
+  left:425px;
+}
+#hats li#n7 .hat {
+  width:81px;height:67px;
+  background:url('../images/dots.png');
+}
+#hats li#n7:hover .hat {
+  transform: rotate(45deg);
+  transform-origin: center right;
+}
+#hats li#n7:hover .title {
+  margin-top:-150px;
+}
+
+
+
+
+#hats li#n8 {
+  top:85px;
+  left:360px;
+}
+#hats li#n8 .hat {
+  width:81px;height:71px;
+  background:url('../images/blacksatin.png');
+}
+#hats li#n8:hover .hat {
+  transform: rotate(-45deg);
+  transform-origin: center left;
+}
+#hats li#n8:hover .title {
+  margin-top:-130px;
+}
+
+
+#hats li#n9 {
+  top:65px;
+  left:480px;
+}
+#hats li#n9 .hat {
+  width:81px;height:75px;
+  background:url('../images/brown.png');
+}
+#hats li#n9:hover .hat {
+  transform: rotate(45deg);
+  transform-origin: center right;
+}
+#hats li#n9:hover .title {
+  margin-top:-90px;
+}
+
+
+#hats li#n10 {
+  top:130px;
+  left:550px;
+}
+#hats li#n10 .hat {
+  width:69px;height:65px;
+  background:url('../images/lick.png');
+}
+#hats li#n10:hover .hat {
+  transform: rotate(40deg);
+  transform-origin: center right;
+}
+#hats li#n10:hover .title {
+  margin-top:-150px;
+  margin-left:-50px;
+}
+
+
+#hats li#n11 {
+  top:150px;
+  left:80px;
+}
+#hats li#n11 .hat {
+  width:71px;height:85px;
+  background:url('../images/pattern.png');
+}
+#hats li#n11:hover .hat {
+  transform: rotate(-40deg);
+  transform-origin: center left;
+}
+#hats li#n11:hover .title {
+  margin-top:-190px;
+}
+
+
+
+#hats li#n12 {
+  top:150px;
+  left:160px;
+}
+#hats li#n12 .hat {
+  width:71px;height:64px;
+  background:url('../images/feather.png');
+}
+#hats li#n12:hover .hat {
+  transform: rotate(40deg);
+  transform-origin: center right;
+}
+#hats li#n12:hover .title {
+  margin-top:-180px;
+}
+
+
+#hats li#n13 {
+  top:150px;
+  left:230px;
+}
+#hats li#n13 .hat {
+  width:89px;height:64px;
+  background:url('../images/green.png');
+}
+#hats li#n13:hover .hat {
+  transform: rotate(-40deg);
+  transform-origin: center left;
+}
+#hats li#n13:hover .title {
+  margin-top:-180px;
+}
+
+
+#hats li#n14 {
+  top:150px;
+  left:320px;
+}
+#hats li#n14 .hat {
+  width:82px;height:64px;
+  background:url('../images/fedora.png');
+}
+#hats li#n14:hover .hat {
+  transform: rotate(40deg);
+  transform-origin: center right;
+}
+#hats li#n14:hover .title {
+  margin-top:-180px;
+}
+
+
+#hats li#n15 {
+  top:180px;
+  left:400px;
+}
+#hats li#n15 .hat {
+  width:81px;height:60px;
+  background:url('../images/feminine.png');
+}
+#hats li#n15:hover .hat {
+  transform: rotate(-40deg);
+  transform-origin: center left;
+}
+#hats li#n15:hover .title {
+  margin-top:-210px;
+}
+
+
+#hats li#n16 {
+  top:160px;
+  left:485px;
+}
+#hats li#n16 .hat {
+  width:81px;height:70px;
+  background:url('../images/feltygrey.png');
+}
+#hats li#n16:hover .hat {
+  transform: rotate(40deg);
+  transform-origin: center right;
+}
+#hats li#n16:hover .title {
+  margin-top:-210px;
+}
+
+
+#hats li#n17 {
+  top:200px;
+  left:575px;
+}
+#hats li#n17 .hat {
+  width:80px;height:73px;
+  background:url('../images/whitestripe.png');
+}
+#hats li#n17:hover .hat {
+  transform: rotate(40deg);
+  transform-origin: center right;
+}
+#hats li#n17:hover .title {
+  margin-top:-220px;
+}
+
+
+
