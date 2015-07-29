@@ -76,10 +76,10 @@ h1 {
   color: #25171A;
   margin-bottom:20px;
   letter-spacing: 0.4px;
-  transform: rotate(-2.5deg);
+  transform: rotate(-2deg);
   transform-origin: bottom left;
   margin-top:10px;
-  margin:10px 0 15px -30px;
+  margin:10px 0 15px -15px;
 }
 p{
   font-weight:300;
